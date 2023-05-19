@@ -56,7 +56,7 @@ discrete values in increments of thirds within them (so, ⅓, ⅔, 1, 4/3, and s
 on…).
 </p>
 <p>
-<img src="docs/images/image1.png" width="" alt="alt_text" title="image_tooltip">
+<img src="docs/images/image-1.png" width="" alt="alt_text" title="image_tooltip">
 </p>
 <p>
 <strong>3. Baseline Model(s) and Performance Metrics:</strong>
@@ -86,9 +86,9 @@ baseline. The following sections will show how we improve upon this.
 <strong>3.1 Baseline model for Emotional Polarity:</strong>
 </p>
 <p>
-<img src="docs/images/image2.png" width="" alt="alt_text" title="image_tooltip">
+<img src="docs/images/image-2.png" width="" alt="alt_text" title="image_tooltip">
 </p>
-<h1>Figure 1: ROC curve for Baseline Emotional Polarity classifier</h1>
+<h5 style="text-align: center;">Figure 1: ROC curve for Baseline Emotional Polarity classifier</h5>
 <p>
 	From figure1, we can clearly find that the category of score 2 has the best ROC
 curve; the category of score 1 is the second one; 0 is the third. Other than
@@ -103,9 +103,9 @@ in the Emotional Polarity model are based on these findings.
 <strong>3.2 Baseline model for Emotional Intensity:</strong>
 </p>
 <p>
-<img src="docs/images/image3.png" width="" alt="alt_text" title="image_tooltip">
+<img src="docs/images/image-3.png" width="" alt="alt_text" title="image_tooltip">
 </p>
-<h1>Figure 2: ROC curve for Baseline Emotion classifier</h1>
+<h5 style="text-align: center;">Figure 2: ROC curve for Baseline Emotion classifier</h5>
 <p>
 Unlike Figure 1, most of the categories are higher than 0.5. This image looks
 like a better baseline model since this model works in classifying among most
@@ -115,9 +115,9 @@ labels.
 <strong>3.3 Baseline model for Empathy:</strong>
 </p>
 <p>
-<img src="docs/images/image4.png" width="" alt="alt_text" title="image_tooltip">
+<img src="docs/images/image-4.png" width="" alt="alt_text" title="image_tooltip">
 </p>
-<h1>Figure 3: ROC curve for Baseline Empathy classifier</h1>
+<h5 style="text-align: center;">Figure 3: ROC curve for Baseline Empathy classifier</h5>
 <p>
 	As it shows in this chart, OvR performs not so well but it is a nice fit to be
 a baseline model as well, and we can find Figure 2 and Figure 3 are similar
@@ -132,59 +132,59 @@ between positive and negative samples.
    <td>
    </td>
    <td>
-<h1><strong>Emotional Polarity</strong></h1>
+<strong>Emotional Polarity</strong>
    </td>
    <td>
-<h1><strong>Emotional Intensity</strong></h1>
+<strong>Emotional Intensity</strong>
    </td>
    <td>
-<h1><strong>Empathy</strong></h1>
-   </td>
-  </tr>
-  <tr>
-   <td>
-<h1><strong>F1 score</strong></h1>
-   </td>
-   <td>
-<h1>0.386</h1>
-   </td>
-   <td>
-<h1>0.205</h1>
-   </td>
-   <td>
-<h1>0.185</h1>
+<strong>Empathy</strong>
    </td>
   </tr>
   <tr>
    <td>
-<h1><strong>Accuracy</strong></h1>
+<strong>F1 score</strong>
    </td>
    <td>
-<h1>0.386</h1>
+0.386
    </td>
    <td>
-<h1>0.205</h1>
+0.205
    </td>
    <td>
-<h1>0.185</h1>
+0.185
    </td>
   </tr>
   <tr>
    <td>
-<h1><strong>Pearson R score</strong></h1>
+<strong>Accuracy</strong>
    </td>
    <td>
-<h1>0.5074</h1>
+0.386
    </td>
    <td>
-<h1>0.512</h1>
+0.205
    </td>
    <td>
-<h1>0.516</h1>
+0.185
+   </td>
+  </tr>
+  <tr>
+   <td>
+<strong>Pearson R score</strong>
+   </td>
+   <td>
+0.5074
+   </td>
+   <td>
+0.512
+   </td>
+   <td>
+0.516
    </td>
   </tr>
 </table>
-<h1>Table 1</h1>
+<h5 style="text-align: center;">Table 1</h5>
 <p>
 	As in the table shown above, there are three metrics for each model. Overall,
 F1 score is equal to the accuracy score for all models, and empathy is the
@@ -236,7 +236,7 @@ Polarity and Emotion are as follows:
    </td>
   </tr>
 </table>
-<h1>Table 2</h1>
+<h5 style="text-align: center;">Table 2</h5>
 <p>
 	While formulating the problem as a Classification problem, it can also be noted
 that the individual classes have an ordering in them. For example, in the
@@ -386,7 +386,7 @@ it to 8 for comparison
    </td>
   </tr>
 </table>
-<h1>Table 3</h1>
+<h5 style="text-align: center;">Table 3</h5>
 <p>
 </p>
 <p>
@@ -401,9 +401,9 @@ changed the number of categories of the classification head to match ours and
 fine-tuned it for a few epochs.
 </p>
 <p>
-<img src="docs/images/image5.png" width="" alt="alt_text" title="image_tooltip">
+<img src="docs/images/image-5.png" width="" alt="alt_text" title="image_tooltip">
 </p>
-<h1>Figure 4. Fine-tuning a Base RoBERTa Model with a Classification Head (for
+<h5 style="text-align: center;">Figure 4. Fine-tuning a Base RoBERTa Model with a Classification Head (f5r
 prediction Empathy)</h1>
 <p>
 <strong>5.2 Feature-based approach with RoBERTA</strong>
@@ -441,10 +441,10 @@ previous approach.
 </li>
 </ol>
 <p>
-<img src="docs/images/image6.png" width="" alt="alt_text" title="image_tooltip">
+<img src="docs/images/image-6.png" width="" alt="alt_text" title="image_tooltip">
 </p>
 <p>
-Figure 5. Using Hidden states from the last 4 layers of RoBERTa
+<h5 style="text-align: center;">Figure 5. Using Hidden states from the last 4 layers of RoBERTa</h5>
 </p>
 <p>
 	We found that not freezing the weights of RoBERTa performed better than
@@ -517,10 +517,10 @@ prediction.
 </li>
 </ol>
 <p>
-<img src="docs/images/image7.png" width="" alt="alt_text" title="image_tooltip">
+<img src="docs/images/image-7.png" width="" alt="alt_text" title="image_tooltip">
 </p>
 <p>
-Figure 6. Using Masked Language Modeling Approach (for predicting Emotional
+<h5 style="text-align: center;">Figure 6. Using Masked Language Modeling Approach (for predicting Emotional</h5>
 Polarity)
 </p>
 <p>
@@ -557,10 +557,10 @@ other approaches to try to improve our models’ performance.
 very imbalanced.
 </p>
 <p>
-<img src="docs/images/image8.png" width="" alt="alt_text" title="image_tooltip">
+<img src="docs/images/image-8.png" width="" alt="alt_text" title="image_tooltip">
 </p>
 <p>
-Figure 7. Histogram of Empathy, EmotionalPolarity and Emotion
+<h5 style="text-align: center;">Figure 7. Histogram of Empathy, EmotionalPolarity and Emotion</h5>
 </p>
 <p>
 	We attempted to remove the class imbalances by random undersampling and random
@@ -672,10 +672,10 @@ fine-tuning a RoBERTa model for classification.
 <strong>6.1 Emotional Polarity:</strong>
 </p>
 <p>
-<img src="images/image9.png" width="" alt="alt_text" title="image_tooltip">
+<img src="docs/images/image-9.png" width="" alt="alt_text" title="image_tooltip">
 </p>
 <p>
-Figure 8. Class-wise ROC curve for Emotional Polarity
+<h5 style="text-align: center;">Figure 8. Class-wise ROC curve for Emotional Polarity</h5>
 </p>
 <table>
   <tr>
@@ -709,15 +709,15 @@ Figure 8. Class-wise ROC curve for Emotional Polarity
    </td>
   </tr>
 </table>
-<h1>Table 4</h1>
+<h5 style="text-align: center;">Table 4</h5>
 <p>
 <strong>6.2 Emotional Intensity:</strong>
 </p>
 <p>
-<img src="docs/images/image10.png" width="" alt="alt_text" title="image_tooltip">
+<img src="docs/images/image-10.png" width="" alt="alt_text" title="image_tooltip">
 </p>
 <p>
-Figure 9. Class-wise ROC curve for Emotional Intensity
+<h5 style="text-align: center;">Figure 9. Class-wise ROC curve for Emotional Intensity</h5>
 </p>
 <table>
   <tr>
@@ -760,10 +760,10 @@ Table 4
 <strong>6.3 Empathy:</strong>
 </p>
 <p>
-<img src="docs/images/image11.png" width="" alt="alt_text" title="image_tooltip">
+<img src="docs/images/image-11.png" width="" alt="alt_text" title="image_tooltip">
 </p>
 <p>
-Figure 10. Class-wise ROC curve for Empathy
+<h5 style="text-align: center;">Figure 10. Class-wise ROC curve for Empathy</h5>
 </p>
 <table>
   <tr>
